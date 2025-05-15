@@ -1,15 +1,19 @@
+// Import the functions you need from the SDKs
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
+  apiKey: "AIzaSyD9QXeSy-bU2WFXISj22erBWqwcAfikEXI",
+  authDomain: "restaurent-billing.firebaseapp.com",
+  projectId: "restaurent-billing",
+  storageBucket: "restaurent-billing.firebasestorage.app",
+  messagingSenderId: "508998848948",
+  appId: "1:508998848948:web:2082ee323970bcbb27a2e1"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Export Firestore database
 export const db = getFirestore(app);
